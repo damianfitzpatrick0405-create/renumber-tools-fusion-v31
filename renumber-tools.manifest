@@ -1,0 +1,13 @@
+{
+  "autodeskProduct": "FUSION",
+  "type": "addin",
+  "id": "renumber-tools",
+  "author": "",
+  "description": {
+    "": "Renumbers tools in the document CAM library to match the shop master tool list."
+  },
+  "version": "1.0.0",
+  "runOnStartup": false,
+  "supportedOS": "windows|mac",
+  "editEnabled": true
+}
