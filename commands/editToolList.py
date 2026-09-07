@@ -11,6 +11,7 @@ if _lib_dir not in sys.path:
     sys.path.insert(0, _lib_dir)
 
 import tool_list as tl
+from commands import renumberTools
 
 _CMD_ID    = 'editMasterToolList'
 _CMD_NAME  = 'Edit Master Tool List'
@@ -267,6 +268,15 @@ class _HTMLHandler(adsk.core.HTMLEventHandler):
                     new += '.json'
                 if not tl.rename_list(old, new):
                     ui.messageBox('Could not rename — "{}" may already exist.'.format(new))
+                if palette:
+                    _send_state(palette)
+
+            # Renumber the active document's CAM tool library against the
+            # active master list (same action as the toolbar command)
+            elif action == 'renumberTools':
+                result = renumberTools.perform_renumber()
+                ui.messageBox(result['message'],
+                              'Renumber Tools Result' if result['ok'] else 'Renumber Tools')
                 if palette:
                     _send_state(palette)
 

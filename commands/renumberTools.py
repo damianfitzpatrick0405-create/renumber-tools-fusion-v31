@@ -33,6 +33,92 @@ class _CreatedHandler(adsk.core.CommandCreatedEventHandler):
             adsk.core.Application.get().userInterface.messageBox(traceback.format_exc())
 
 
+def perform_renumber():
+    """
+    Core renumber logic, shared by the toolbar command and the
+    'Renumber Active Doc' button in the Tool List Manager palette.
+    Returns a dict: {'ok': bool, 'message': str}
+    """
+    app = adsk.core.Application.get()
+
+    # ── Get CAM product ───────────────────────────────────────────
+    doc = app.activeDocument
+    if not doc:
+        return {'ok': False, 'message': 'No active document.'}
+
+    cam = None
+    for i in range(doc.products.count):
+        p = doc.products.item(i)
+        if p.objectType == adsk.cam.CAM.classType():
+            cam = p
+            break
+
+    if not cam:
+        return {'ok': False, 'message': 'No CAM workspace in the active document.\nOpen the Manufacturing workspace first.'}
+
+    doc_lib = cam.documentToolLibrary
+    if not doc_lib or doc_lib.count == 0:
+        return {'ok': False, 'message': 'The document tool library is empty.\nAdd tools to your CAM setup first.'}
+
+    # ── Load active master list ───────────────────────────────────
+    active_name = tl.get_active_list_name()
+    master      = tl.load()
+    lookup      = tl.build_lookup(master)
+
+    updated       = []
+    already_ok    = []
+    missing       = []
+
+    for i in range(doc_lib.count):
+        tool   = doc_lib.item(i)
+        params = tool.parameters
+
+        desc_p   = params.itemByName('tool_description')
+        raw_desc = desc_p.value.value if desc_p else ''
+        if not isinstance(raw_desc, str):
+            raw_desc = str(raw_desc)
+
+        tn_p = params.itemByName('tool_number')
+        try:
+            cur_num = int(tn_p.value.value) if tn_p else -1
+        except (TypeError, ValueError):
+            cur_num = -1
+
+        key = tl.normalize(raw_desc)
+
+        if key in lookup:
+            new_num = lookup[key]
+            if cur_num != new_num:
+                tn_p.value.value = new_num
+                doc_lib.update(tool, True)
+                updated.append((new_num, raw_desc))
+            else:
+                already_ok.append(raw_desc)
+        elif raw_desc:
+            missing.append(raw_desc)
+
+    # ── Sync unknowns back to JSON ────────────────────────────────
+    if missing:
+        tl.save(tl.sync_missing(master, missing))
+
+    # ── Result message ────────────────────────────────────────────
+    lines = ['Active list: {}'.format(active_name), '']
+    if updated:
+        lines.append('✅ Updated {} tool(s):'.format(len(updated)))
+        for num, desc in updated:
+            lines.append('   T{} — {}'.format(num, desc))
+    if already_ok:
+        lines.append('☑️  {} tool(s) already correct.'.format(len(already_ok)))
+    if missing:
+        lines.append('⚠️  {} tool(s) not in master list (added as T0):'.format(len(missing)))
+        for desc in missing:
+            lines.append('   • {}'.format(desc))
+    if not updated and not missing:
+        lines.append('All tools already match the master list.')
+
+    return {'ok': True, 'message': '\n'.join(lines)}
+
+
 class _ExecuteHandler(adsk.core.CommandEventHandler):
     def __init__(self): super().__init__()
 
@@ -41,86 +127,8 @@ class _ExecuteHandler(adsk.core.CommandEventHandler):
         try:
             app = adsk.core.Application.get()
             ui  = app.userInterface
-
-            # ── Get CAM product ───────────────────────────────────────────
-            doc = app.activeDocument
-            if not doc:
-                ui.messageBox('No active document.')
-                return
-
-            cam = None
-            for i in range(doc.products.count):
-                p = doc.products.item(i)
-                if p.objectType == adsk.cam.CAM.classType():
-                    cam = p
-                    break
-
-            if not cam:
-                ui.messageBox('No CAM workspace in the active document.\nOpen the Manufacturing workspace first.')
-                return
-
-            doc_lib = cam.documentToolLibrary
-            if not doc_lib or doc_lib.count == 0:
-                ui.messageBox('The document tool library is empty.\nAdd tools to your CAM setup first.')
-                return
-
-            # ── Load active master list ───────────────────────────────────
-            active_name = tl.get_active_list_name()
-            master      = tl.load()
-            lookup      = tl.build_lookup(master)
-
-            updated       = []
-            already_ok    = []
-            missing       = []
-
-            for i in range(doc_lib.count):
-                tool   = doc_lib.item(i)
-                params = tool.parameters
-
-                desc_p   = params.itemByName('tool_description')
-                raw_desc = desc_p.value.value if desc_p else ''
-                if not isinstance(raw_desc, str):
-                    raw_desc = str(raw_desc)
-
-                tn_p = params.itemByName('tool_number')
-                try:
-                    cur_num = int(tn_p.value.value) if tn_p else -1
-                except (TypeError, ValueError):
-                    cur_num = -1
-
-                key = tl.normalize(raw_desc)
-
-                if key in lookup:
-                    new_num = lookup[key]
-                    if cur_num != new_num:
-                        tn_p.value.value = new_num
-                        doc_lib.update(tool, True)
-                        updated.append((new_num, raw_desc))
-                    else:
-                        already_ok.append(raw_desc)
-                elif raw_desc:
-                    missing.append(raw_desc)
-
-            # ── Sync unknowns back to JSON ────────────────────────────────
-            if missing:
-                tl.save(tl.sync_missing(master, missing))
-
-            # ── Result message ────────────────────────────────────────────
-            lines = ['Active list: {}'.format(active_name), '']
-            if updated:
-                lines.append('✅ Updated {} tool(s):'.format(len(updated)))
-                for num, desc in updated:
-                    lines.append('   T{} — {}'.format(num, desc))
-            if already_ok:
-                lines.append('☑️  {} tool(s) already correct.'.format(len(already_ok)))
-            if missing:
-                lines.append('⚠️  {} tool(s) not in master list (added as T0):'.format(len(missing)))
-                for desc in missing:
-                    lines.append('   • {}'.format(desc))
-            if not updated and not missing:
-                lines.append('All tools already match the master list.')
-
-            ui.messageBox('\n'.join(lines), 'Renumber Tools Result')
+            result = perform_renumber()
+            ui.messageBox(result['message'], 'Renumber Tools Result')
 
         except Exception:
             if ui:

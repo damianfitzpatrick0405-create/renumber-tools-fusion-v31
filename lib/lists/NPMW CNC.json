@@ -1,0 +1,714 @@
+[
+  {
+    "description": "DODEKA MINI 45 SHELL MILL D=2\" Z=4;DODEKA MINI INSERT HNGJ-FNLDJ R=1.0 W",
+    "toolNumber": 0
+  },
+  {
+    "description": "2\" DIA FACE MILL WITH OCTAGONAL INSERTS",
+    "toolNumber": 1
+  },
+  {
+    "description": "2.5\" DIA FACE MILL",
+    "toolNumber": 1
+  },
+  {
+    "description": "3/8\" Spot Drill",
+    "toolNumber": 2
+  },
+  {
+    "description": "1/2\" Spot Drill",
+    "toolNumber": 2
+  },
+  {
+    "description": "5/16\" DIA X 45 DEG X 4 FLUTE CHAMFER MILL",
+    "toolNumber": 3
+  },
+  {
+    "description": ".5\" DIA X 45 DEG X 4 FLUTE CHAMFER MILL",
+    "toolNumber": 3
+  },
+  {
+    "description": "3/8\" Flat Endmill 4 FLUTE",
+    "toolNumber": 4
+  },
+  {
+    "description": "1/8\" Flat Endmill",
+    "toolNumber": 5
+  },
+  {
+    "description": "#10-32 UNF ROLL TAP",
+    "toolNumber": 6
+  },
+  {
+    "description": "#16 DRILL",
+    "toolNumber": 7
+  },
+  {
+    "description": "3/16\" Flat Endmill",
+    "toolNumber": 8
+  },
+  {
+    "description": "1/8\" dia x 30 deg engraving tool",
+    "toolNumber": 9
+  },
+  {
+    "description": "1/4\" Flat Endmill",
+    "toolNumber": 10
+  },
+  {
+    "description": "1/2\" Roughing Endmill",
+    "toolNumber": 11
+  },
+  {
+    "description": "7/8 DRILL HSS",
+    "toolNumber": 12
+  },
+  {
+    "description": "3/4\" DIA X 6 FLUTE X 60 DEG THREAD MILL",
+    "toolNumber": 13
+  },
+  {
+    "description": "#11 DRILL",
+    "toolNumber": 14
+  },
+  {
+    "description": "1/2\" Flat Endmill",
+    "toolNumber": 15
+  },
+  {
+    "description": "1/2\" Flat Endmill 2 IN LOC",
+    "toolNumber": 16
+  },
+  {
+    "description": "1/4\" Flat Endmill ROUGHING",
+    "toolNumber": 17
+  },
+  {
+    "description": "#1 DRILL",
+    "toolNumber": 18
+  },
+  {
+    "description": "1/4-20 UNC ROLL TAP",
+    "toolNumber": 19
+  },
+  {
+    "description": "3/8\" Flat EM 3 FLUTE",
+    "toolNumber": 20
+  },
+  {
+    "description": "#24 DRILL",
+    "toolNumber": 21
+  },
+  {
+    "description": "#8-32 UNC ROLL TAP",
+    "toolNumber": 22
+  },
+  {
+    "description": "1/32\" Flat Endmill",
+    "toolNumber": 23
+  },
+  {
+    "description": "PROBE",
+    "toolNumber": 24
+  },
+  {
+    "description": "5mm Ball Endmill",
+    "toolNumber": 25
+  },
+  {
+    "description": "1/4 - E drill",
+    "toolNumber": 26
+  },
+  {
+    "description": "1/2\" Ball Endmill",
+    "toolNumber": 27
+  },
+  {
+    "description": "3/32 Flat Endmill",
+    "toolNumber": 28
+  },
+  {
+    "description": ".625 X.062 SLOT TOOL",
+    "toolNumber": 29
+  },
+  {
+    "description": "1\" X .032 SLOT MILL",
+    "toolNumber": 30
+  },
+  {
+    "description": "H DRILL",
+    "toolNumber": 31
+  },
+  {
+    "description": "1/4-20 STI TAP",
+    "toolNumber": 32
+  },
+  {
+    "description": "R DRILL",
+    "toolNumber": 33
+  },
+  {
+    "description": "M10x1.5 CUT TAP",
+    "toolNumber": 34
+  },
+  {
+    "description": "#31 DRILL",
+    "toolNumber": 35
+  },
+  {
+    "description": "#4-40 STI",
+    "toolNumber": 36
+  },
+  {
+    "description": "#25 drill",
+    "toolNumber": 37
+  },
+  {
+    "description": "#6-32 STI CUT TAP",
+    "toolNumber": 38
+  },
+  {
+    "description": "#34 DRILL",
+    "toolNumber": 39
+  },
+  {
+    "description": "M3X.5 ROLL TAP",
+    "toolNumber": 40
+  },
+  {
+    "description": "#13 DRILL",
+    "toolNumber": 41
+  },
+  {
+    "description": "M5X.8 ROLL TAP",
+    "toolNumber": 42
+  },
+  {
+    "description": "#3 DRILL",
+    "toolNumber": 43
+  },
+  {
+    "description": "M6X1 ROLL TAP",
+    "toolNumber": 44
+  },
+  {
+    "description": "L DRILL",
+    "toolNumber": 45
+  },
+  {
+    "description": "M8X1.25 TAP",
+    "toolNumber": 46
+  },
+  {
+    "description": "T DRILL",
+    "toolNumber": 47
+  },
+  {
+    "description": "M10x1.25 CUT TAP",
+    "toolNumber": 48
+  },
+  {
+    "description": "1/2 82 DEG C-SINK",
+    "toolNumber": 49
+  },
+  {
+    "description": "1/2 100 DEG C-SINK",
+    "toolNumber": 50
+  },
+  {
+    "description": "11/32 DRILL",
+    "toolNumber": 51
+  },
+  {
+    "description": "1/8-28 BSPP",
+    "toolNumber": 52
+  },
+  {
+    "description": "ISCAR HIGH FEED MILL",
+    "toolNumber": 53
+  },
+  {
+    "description": "#54 DRILL",
+    "toolNumber": 54
+  },
+  {
+    "description": ".0615 Reamer",
+    "toolNumber": 55
+  },
+  {
+    "description": "33/64 DRILL",
+    "toolNumber": 56
+  },
+  {
+    "description": "27/64 DRILL",
+    "toolNumber": 57
+  },
+  {
+    "description": "1/2-13 UNC CUT TAP",
+    "toolNumber": 58
+  },
+  {
+    "description": "HSHF, 2\" Diameter Shell Mill",
+    "toolNumber": 59
+  },
+  {
+    "description": "1/2 HIGH FEED ENDMILL",
+    "toolNumber": 60
+  },
+  {
+    "description": "13/32\" Ball Endmill",
+    "toolNumber": 61
+  },
+  {
+    "description": "M6X1 CUT TAP",
+    "toolNumber": 62
+  },
+  {
+    "description": "1/4\" Ball Endmill",
+    "toolNumber": 62
+  },
+  {
+    "description": "13/64 DRILL",
+    "toolNumber": 63
+  },
+  {
+    "description": "#10-32 STI CUT TAP",
+    "toolNumber": 64
+  },
+  {
+    "description": "M12X1.75 CUT TAP use 27/64",
+    "toolNumber": 65
+  },
+  {
+    "description": "9/32 DRILL",
+    "toolNumber": 65
+  },
+  {
+    "description": "13/32 drill",
+    "toolNumber": 66
+  },
+  {
+    "description": "S DRILL",
+    "toolNumber": 67
+  },
+  {
+    "description": "3/8-16 UNC ROLL TAP",
+    "toolNumber": 68
+  },
+  {
+    "description": "#27 DRILL",
+    "toolNumber": 69
+  },
+  {
+    "description": "M4X.7 ROLL TAP",
+    "toolNumber": 70
+  },
+  {
+    "description": "1/8 DRILL",
+    "toolNumber": 71
+  },
+  {
+    "description": "#6-32 UNC",
+    "toolNumber": 72
+  },
+  {
+    "description": "1/8\" x 0.040\" .062 CENTER DIA Radius Mill",
+    "toolNumber": 73
+  },
+  {
+    "description": "0.187\" Radius Mill .33 tip dia",
+    "toolNumber": 74
+  },
+  {
+    "description": ".055\" Flat Endmill",
+    "toolNumber": 75
+  },
+  {
+    "description": "1/16\" Flat Endmill",
+    "toolNumber": 76
+  },
+  {
+    "description": "5/16 Drill",
+    "toolNumber": 77
+  },
+  {
+    "description": "23/64 Drill",
+    "toolNumber": 78
+  },
+  {
+    "description": "#3 Drill",
+    "toolNumber": 79
+  },
+  {
+    "description": "3/4\" DIA X 45 DEG DOVETAIL",
+    "toolNumber": 80
+  },
+  {
+    "description": "9/16 Drill",
+    "toolNumber": 81
+  },
+  {
+    "description": "5/8 DRILL",
+    "toolNumber": 82
+  },
+  {
+    "description": "1-8 UNC CUT TAP",
+    "toolNumber": 83
+  },
+  {
+    "description": "1\" DIA X 45 DEG X 2 FLUTE CHAMFER MILL",
+    "toolNumber": 84
+  },
+  {
+    "description": "INDEXABLE CHAMFER MILL .98 CENTER DIAMETER",
+    "toolNumber": 85
+  },
+  {
+    "description": "43/64 Drill",
+    "toolNumber": 86
+  },
+  {
+    "description": "3/4-10 UNC Cut Tap",
+    "toolNumber": 87
+  },
+  {
+    "description": "29/64 Drill",
+    "toolNumber": 88
+  },
+  {
+    "description": "1/2-20 UNF CUT TAP",
+    "toolNumber": 89
+  },
+  {
+    "description": "#19 Drill",
+    "toolNumber": 90
+  },
+  {
+    "description": "3/32\" .25 CENTER DIA Radius Mill",
+    "toolNumber": 91
+  },
+  {
+    "description": "P Drill",
+    "toolNumber": 92
+  },
+  {
+    "description": "#38 Drill",
+    "toolNumber": 93
+  },
+  {
+    "description": "#4-40 UNC",
+    "toolNumber": 94
+  },
+  {
+    "description": "3mm Ball Endmill",
+    "toolNumber": 95
+  },
+  {
+    "description": "21/64 Drill",
+    "toolNumber": 96
+  },
+  {
+    "description": "#17 Drill",
+    "toolNumber": 97
+  },
+  {
+    "description": "#8-32 STI",
+    "toolNumber": 98
+  },
+  {
+    "description": "#7 Drill",
+    "toolNumber": 99
+  },
+  {
+    "description": "1/16 Drill",
+    "toolNumber": 100
+  },
+  {
+    "description": "1\" X .078SLOT MILL",
+    "toolNumber": 101
+  },
+  {
+    "description": "X Drill",
+    "toolNumber": 102
+  },
+  {
+    "description": ".5\" X .03 SLOT MILL",
+    "toolNumber": 102
+  },
+  {
+    "description": "N DRILL",
+    "toolNumber": 103
+  },
+  {
+    "description": "5/16-18 UNC",
+    "toolNumber": 104
+  },
+  {
+    "description": "1/2\" Bullnose Endmill",
+    "toolNumber": 105
+  },
+  {
+    "description": "3/8\" Bullnose Endmill",
+    "toolNumber": 106
+  },
+  {
+    "description": "7/16 Drill",
+    "toolNumber": 107
+  },
+  {
+    "description": ".1245 Reamer",
+    "toolNumber": 108
+  },
+  {
+    "description": "I DRILL",
+    "toolNumber": 109
+  },
+  {
+    "description": "#30 Drill",
+    "toolNumber": 110
+  },
+  {
+    "description": "5/16-24 UNF CUT TAP",
+    "toolNumber": 111
+  },
+  {
+    "description": "5/32 Drill",
+    "toolNumber": 112
+  },
+  {
+    "description": "DEBURRING BRUSH",
+    "toolNumber": 113
+  },
+  {
+    "description": "3/8\" Ball Endmill",
+    "toolNumber": 114
+  },
+  {
+    "description": "0.5000 (1/2) DIA Slot Mill",
+    "toolNumber": 115
+  },
+  {
+    "description": "13MM DRILL",
+    "toolNumber": 116
+  },
+  {
+    "description": "9/16-18 UNF Cut Tap",
+    "toolNumber": 117
+  },
+  {
+    "description": "1/8\" Ball Endmill",
+    "toolNumber": 119
+  },
+  {
+    "description": "1\" INDEXABLE SANDVIK END MILL",
+    "toolNumber": 120
+  },
+  {
+    "description": "3/8-18 NPT",
+    "toolNumber": 121
+  },
+  {
+    "description": "#9 DRILL",
+    "toolNumber": 122
+  },
+  {
+    "description": ".100\" X.051 CENTER DIA Radius Mill",
+    "toolNumber": 123
+  },
+  {
+    "description": "60 DEG INCLUDED ANGLE CHAMFER MILL",
+    "toolNumber": 124
+  },
+  {
+    "description": "120 DEG INCLUDED ANGLE CHAMFER MILL",
+    "toolNumber": 125
+  },
+  {
+    "description": "3/8 DRILL",
+    "toolNumber": 126
+  },
+  {
+    "description": ".25\" X.5 CENTER DIA Radius Mill",
+    "toolNumber": 127
+  },
+  {
+    "description": "11/64 Drill",
+    "toolNumber": 128
+  },
+  {
+    "description": "#10-24 UNC CUT TAP",
+    "toolNumber": 129
+  },
+  {
+    "description": "ACME .5 DIA THREAD MILL",
+    "toolNumber": 130
+  },
+  {
+    "description": "5/8-11 UNC CUT TAP",
+    "toolNumber": 131
+  },
+  {
+    "description": "1\" X .125 SLOT MILL",
+    "toolNumber": 132
+  },
+  {
+    "description": "HARVEY - 23821-C3 - DOVETAIL CUTTER WITH DROP HOLE ALLOWANCE - 0.1720 (11/64) DIA X 0.0310 (1/32) RADIUS X 48 DEG INCLUDED , 2 FLUTES, ALTIN COATED",
+    "toolNumber": 133
+  },
+  {
+    "description": "HARVEY - 23828-C3 - DOVETAIL CUTTER WITH DROP HOLE ALLOWANCE - 0.2840 DIA X 0.0310 (1/32) RADIUS X 48 DEG INCLUDED , 2 FLUTES, ALTIN COATED",
+    "toolNumber": 134
+  },
+  {
+    "description": "4mm Ball Endmill",
+    "toolNumber": 135
+  },
+  {
+    "description": "3/32 Drill",
+    "toolNumber": 136
+  },
+  {
+    "description": "9/64 DRILL",
+    "toolNumber": 137
+  },
+  {
+    "description": ".187\" X .03 SLOT MILL",
+    "toolNumber": 138
+  },
+  {
+    "description": ".625\" X .06 SLOT MILL",
+    "toolNumber": 139
+  },
+  {
+    "description": "1/2 DRILL",
+    "toolNumber": 140
+  },
+  {
+    "description": ".125 RADIUS TOOL .062 TIP DIA",
+    "toolNumber": 141
+  },
+  {
+    "description": "60 DEG INCLUDED ANGLE CHAMFER MILL HSS",
+    "toolNumber": 142
+  },
+  {
+    "description": "M3 FLOW DRILL",
+    "toolNumber": 143
+  },
+  {
+    "description": "M4 FLOW DRILL",
+    "toolNumber": 144
+  },
+  {
+    "description": "M5 FLOW DRILL",
+    "toolNumber": 145
+  },
+  {
+    "description": "M6 FLOW DRILL",
+    "toolNumber": 146
+  },
+  {
+    "description": "14.5 MM DRILL.5709",
+    "toolNumber": 148
+  },
+  {
+    "description": "M16x1.5 Cut Tap",
+    "toolNumber": 149
+  },
+  {
+    "description": "M24x3 Cut Tap",
+    "toolNumber": 150
+  },
+  {
+    "description": "#44 Drill",
+    "toolNumber": 151
+  },
+  {
+    "description": "3/4 NECKED BACK ENDMILL 5 IN EXT",
+    "toolNumber": 153
+  },
+  {
+    "description": "M8X1.25 STI CUT TAP",
+    "toolNumber": 153
+  },
+  {
+    "description": "#3 Center Drill",
+    "toolNumber": 154
+  },
+  {
+    "description": "#29 Drill",
+    "toolNumber": 155
+  },
+  {
+    "description": "3/8\" Bullnose Endmill .09 RAD",
+    "toolNumber": 156
+  },
+  {
+    "description": "5/16\" Bullnose Endmill .03 RAD",
+    "toolNumber": 157
+  },
+  {
+    "description": "M25X1.5 CUT TAP",
+    "toolNumber": 158
+  },
+  {
+    "description": "12.5MM DRILL",
+    "toolNumber": 159
+  },
+  {
+    "description": "M12X1.75 STI TAP",
+    "toolNumber": 160
+  },
+  {
+    "description": "M6X1 STI CUT TAP",
+    "toolNumber": 162
+  },
+  {
+    "description": ".5/16\" X.5 CENTER DIA Radius Mill",
+    "toolNumber": 163
+  },
+  {
+    "description": "G DRILL",
+    "toolNumber": 164
+  },
+  {
+    "description": "#18 DRILL",
+    "toolNumber": 165
+  },
+  {
+    "description": "M4X.7 STI TAP",
+    "toolNumber": 166
+  },
+  {
+    "description": "5/64\" Ball Endmill",
+    "toolNumber": 167
+  },
+  {
+    "description": "15 MM DRILL .5906",
+    "toolNumber": 168
+  },
+  {
+    "description": "11MM DRILL",
+    "toolNumber": 169
+  },
+  {
+    "description": "60 DEG INCLUDED ANGLE CHAMFER MILL HSS",
+    "toolNumber": 170
+  },
+  {
+    "description": "1\" Flat Endmill LONG",
+    "toolNumber": 171
+  },
+  {
+    "description": "3/8\" 140 deg Spot Drill",
+    "toolNumber": 172
+  },
+  {
+    "description": "1/4\" 140 deg Spot Drill",
+    "toolNumber": 173
+  },
+  {
+    "description": "1/2-14 NPT",
+    "toolNumber": 176
+  }
+]
